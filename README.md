@@ -1,24 +1,19 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+I received a picture as MockUp, I design the same mockup using bootstrap-sass and ruby on rails. This is a temporary link to the MockUp, work in progress:
 
-Things you may want to cover:
+https://protected-stream-89875.herokuapp.com/
 
-* Ruby version
+Technologies Used:
 
-* System dependencies
+* Ruby version 2.4.1
 
-* Configuration
+* Rails
 
-* Database creation
+* Font Awesome
 
-* Database initialization
+* Database PostgreSQL
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
+* Deploy to Heroku
 
 * ...
