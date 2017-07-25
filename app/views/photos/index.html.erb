@@ -1,0 +1,201 @@
+<div class="nav-background">
+  <!-- Static navbar -->
+  <nav class="navbar navbar-default">
+    <div class="nav-padding">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <%= image_tag("logo.png", class:"top-left-logo") %>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li id="drop-navbar" class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FOR SALE <i class="fa fa-angle-down fa-1x" aria-hidden="true"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">FOR SALE 1</a></li>
+              <li><a href="#">FOR SALE 2</a></li>
+              <li><a href="#">FOR SALE 3</a></li>
+              <li role="separator" class="divider"></li>
+              <li class="dropdown-header">Clearance</li>
+              <li><a href="#">Under a Billion</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul id="account-drop" class="nav nav-pills pull-right">
+          <li role="presentation"><%= link_to "MY ACCOUNT", my_account_path %></li>
+          <li role="presentation" class="active"><a href="#">POST AN AD</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+
+
+  <!-- </header> -->
+
+  <!-- <section class="main-nav-area"> -->
+  <div id="row-search">
+    <div class="row">
+      <div class="col-xs-7 col-sm-7">
+        <form id="search-input" class="navbar-form"><i class="fa fa-search fa-2x" aria-hidden="true"></i>
+          <input type="text" class="form-control" placeholder="Search Mountains...">
+          <!-- <input id="search-input" type="search" name="search_mountains" >
+          <input type="" id="submit-buttom"> -->
+        </form>
+        <hr id="hr-search">
+      </div>
+      <div class="col-xs-5 col-sm-5 country">
+        <h6 id="in-font">in</h6>
+        <a id="countries" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Europe <i class="fa fa-angle-down fa-1x" aria-hidden="true"></i></a>
+        <ul class="dropdown-menu position">
+          <li><a href="#">Ecuador</a></li>
+        </ul>
+        <hr id="hr-country">
+      </div>
+    </div>
+  </div>
+
+
+  <!-- <div class="container-fluid"> -->
+  <div id="categories">
+
+
+    <div class="row">
+
+      <div id="list-icons" class="col-xs-4 col-sm-2 col-md-2">
+        <i class="fa fa-th fa-1x" aria-hidden="true"></i>
+        <i class="fa fa-list-ul" aria-hidden="true"></i>
+        <i class="fa fa-align-justify" aria-hidden="true"></i>
+        <i class="fa fa-map-marker" aria-hidden="true"></i>
+
+      </div>
+
+      <div id="prices" class="col-xs-4 col-sm-2 col-md-2">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PRICES  <i class="fa fa-angle-down fa-1x" aria-hidden="true"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">BUNDLES </a></li>
+        </ul>
+      </div>
+
+      <div id="hills" class="col-xs-4 col-sm-2 col-md-2">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">HILLS NUMBER   <i class="fa fa-angle-down fa-1x" aria-hidden="true"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">HILLS STYLE </a></li>
+        </ul>
+      </div>
+
+      <div id="type" class="col-xs-4 col-sm-2 col-md-2">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">TYPE   <i class="fa fa-angle-down fa-1x" aria-hidden="true"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">SORT </a></li>
+        </ul>
+      </div>
+
+      <div id="more" class="col-xs-4 col-sm-2 col-md-2">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MORE   <i class="fa fa-angle-down fa-1x" aria-hidden="true"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">BET </a></li>
+        </ul>
+      </div>
+
+      <div id="old-first" class="col-xs-4 col-sm-2 col-md-2">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">OLDEST FIRST   <i class="fa fa-angle-down fa-1x" aria-hidden="true"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">NEWEST FIRST </a></li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <hr id="hr-dropdowns">
+
+</div>
+
+
+<div class="mountain-area">
+  <div class="row">
+
+
+    <div class="col-xs-12 col-sm-8 col-md-8">
+
+      <picture>
+
+        <!-- <source media="(max-width: 767px)" srcset=<%= image_tag("mountains01_mb.jpg", alt:"Mountains picture 01")%> -->
+          <%= image_tag("mountains01.jpg", alt:"Mountains picture 01", class:"main-img") %>
+          <a class="main-price-text" href="#">$85B</a>
+          <div class="main-img-hearth">
+            <input id="toggle-heart" type="checkbox"/>
+            <label for="toggle-heart">❤</label>
+          </div>
+          <p class="main-img-title">
+            Mount Everest in perfect condition
+          </p>
+        </div>
+
+        <!-- <div class="main-small-img"> -->
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <%= image_tag("mountains02.jpg", alt:"Mountains picture 02", class:"main-img-small")%>
+          <a class="main-price-text-small" href="#">$85B</a>
+          <div class="main-img-hearth-small">
+            <input id="toggle-heart-small" type="checkbox"/>
+            <label for="toggle-heart-small">❤</label>
+          </div>
+          <p class="main-img-title">
+            Dousus peoplus readus actually this textus
+          </p>
+        </div>
+      </div>
+
+
+
+
+      <!-- </section> -->
+
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <!-- <div class="main-small-img" id="ximg-left"> -->
+          <%= image_tag("mountains03.jpg", alt:"Mountains picture 03", class:"main-img-small")%>
+          <a class="main-price-text-small"  href="#">$85B</a>
+          <div class="main-img-hearth-small">
+            <input id="toggle-heart-small-1" type="checkbox"/>
+            <label for="toggle-heart-small-1">❤</label>
+          </div>
+          <p class="main-img-title">
+            Mattern Horn between Switzerland and italy
+          </p>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <!-- <div class="main-small-img" id="ximg-center"> -->
+          <%= image_tag("mountains04.jpg", alt:"Mountains picture 04", class:"main-img-small")%>
+          <a class="main-price-text-small" href="#">$85B</a>
+          <div class="main-img-hearth-small">
+            <input id="toggle-heart-small-2" type="checkbox"/>
+            <label for="toggle-heart-small-2">❤</label>
+          </div>
+          <p class="main-img-title">
+            Snowdon Welsh with rare flora and fauna
+          </p>
+        </div>
+
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <%= image_tag("mountains05.jpg", class:"main-img-small", alt:"Mountains picture 05") %>
+          <a class="main-price-text-small" href="#">$85B</a>
+          <div class="main-img-hearth-small">
+            <input id="toggle-heart-small-3" type="checkbox"/>
+            <label for="toggle-heart-small-3">❤</label>
+          </div>
+          <p class="main-img-title">
+            Volcanic Mount Rainier
+          </p>
+
+        </div>
+      </div>
+    </div>

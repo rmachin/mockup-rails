@@ -1,0 +1,68 @@
+// Footer
+footer.text-center
+	.footer-above
+		.container
+			.row
+				.footer-col.col-md-4
+					h3 Location
+					p
+						| {{ site.address_street }}
+						br
+						| {{ site.address_city }}, {{ site.address_state }} {{ site.address_zip }}
+				.footer-col.col-md-4
+					h3 Around the Web
+					ul.list-inline
+						| {% if site.facebook_username %}
+						li
+							a.btn-social.btn-outline(href='https://www.facebook.com/{{ site.facebook_username }}')
+								i.fa.fa-fw.fa-facebook
+						|                         {% endif %}
+						|                         {% if site.twitter_username %}
+						li
+							a.btn-social.btn-outline(href='https://twitter.com/{{ site.twitter_username }}')
+								i.fa.fa-fw.fa-twitter
+						|                         {% endif %}
+						|                         {% if site.github_username %}
+						li
+							a.btn-social.btn-outline(href='https://github.com/{{ site.github_username }}')
+								i.fa.fa-fw.fa-github
+						|                         {% endif %}
+						|                         {% if site.instagram_username %}
+						li
+							a.btn-social.btn-outline(href='https://www.instagram.com/{{ site.instagram_username }}')
+								i.fa.fa-fw.fa-instagram
+						|                         {% endif %}
+						|                         {% if site.stackoverflow_url %}
+						li
+							a.btn-social.btn-outline(href='{{ site.stackoverflow_url }}')
+								i.fa.fa-fw.fa-stack-overflow
+						|                         {% endif %}
+						|                         {% if site.googleplus_username %}
+						li
+							a.btn-social.btn-outline(href='https://plus.google.com/+{{ site.googleplus_username }}')
+								i.fa.fa-fw.fa-google-plus
+						|                         {% endif %}
+						|                         {% if site.skype_username %}
+						li
+							a.btn-social.btn-outline(href='skype:{{ site.skype_username }}?call')
+								i.fa.fa-fw.fa-skype
+						|                         {% endif %}
+						|                         {% if site.linkedin_url %}
+						li
+							a.btn-social.btn-outline(href='{{ site.linkedin_url }}')
+								i.fa.fa-fw.fa-linkedin
+						|                         {% endif %}
+				.footer-col.col-md-4
+					h3 About {{ site.title }}
+					p
+						a(href='http://startbootstrap.com') Start Bootstrap
+						|  is an open source library of Bootstrap themes and templates.
+	.footer-below
+		.container
+			.row
+				.col-lg-12
+					| Copyright © Your Website {{ site.time | date: "%Y" }}
+// Scroll to Top Button (Only visible on small and extra-small screen sizes)
+.scroll-top.page-scroll.hidden-sm.hidden-xs.hidden-lg.hidden-md
+	a.btn.btn-primary(href='#page-top')
+		i.fa.fa-chevron-up
